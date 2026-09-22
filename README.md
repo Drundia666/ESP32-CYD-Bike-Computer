@@ -155,6 +155,12 @@ Incorrect magnet polarity or Hall sensor orientation. The magnet may be facing t
 
 Refer to the photos in the assembly photos folder for the correct Hall sensor orientation.
 
+Securing Components
+
+The magnetic USB connector, BME280 sensor, and 3-pin connector can be secured in place using a couple of drops of superglue.
+
+It is recommended to secure the battery using hot glue. Additionally, place a thin layer of soft, electrically insulating material between the battery and the rear cover to provide cushioning and prevent direct contact.
+
 # 🚴 Велокомпьютер на ESP32
 
 Самодельный велокомпьютер на базе ESP32 с сенсорным управлением, измерением скорости и расстояния, двумя независимыми поездками, таймерами и возможностью настройки интерфейса.
@@ -384,6 +390,9 @@ float wheelCircumferenceMm = 2275;
 > Для более точного результата измеряйте колесо при обычном давлении в шине и с привычной нагрузкой на велосипед.
 
 Введите полученное значение в настройках велокомпьютера или непосредственно в исходном коде.
+
+Магнитный разъем, датчик BME280 и разъем 3-пин - крепятся с помощью пару капель суперклея
+Аккумулятор лучше зафиксировать с помощью термоклея, а также между аккумулятором и задней крышкой желательно положить небольшой толщины мягкий изоляционный материал 
 
 ---
 
