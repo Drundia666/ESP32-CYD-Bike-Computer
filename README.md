@@ -13,6 +13,14 @@ Open-source ESP32-based bicycle computer with a graphical display, speed trackin
 - Temperature, atmospheric pressure and humidity monitoring
 - Trip timer
 
+- Important Notice
+
+This bike computer is a DIY hobby project intended for recreational use only.
+
+It is not a professional-grade device.
+Do not use it in competitions or situations where accurate measurements are critical.
+It is not waterproof. Using it in rainy conditions is not recommended.
+
 - # About the Project (для описания на русском листайте ниже)
 
 The entire codebase was written by AI. It went through many iterations before I achieved the desired result, so the code may not be fully optimized.
@@ -147,6 +155,8 @@ Incorrect magnet polarity or Hall sensor orientation. The magnet may be facing t
 
 Refer to the photos in the assembly photos folder for the correct Hall sensor orientation.
 
+Важно - 
+Не является профессиональным устройством. Не используйте в соревнованиях. Сделано для развлечения. Не является водонепроницаемым, использование в дождь не рекомендуется.
 
   Код полностью написан ИИ. Он прошел много итерации пока я не получил нужный результат. Возможно не является оптимальным. 
   Установлен на личный велосипед марки KTM. Отсюда и выбранный корпус под плату - внешне стилизован под приборную панель от мотоциклов KTM Duke 790-890. Так же подойдет и на другие марки с диаметром пера вилки 35мм, диаметр руля в месте крепления — 32мм. Для других размеров возможно вам придется немного доработать 3d модели крепежа.
