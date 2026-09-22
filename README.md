@@ -1,9 +1,9 @@
 # ESP32-CYD-Bike-Computer
 Open-source ESP32-based bicycle computer with a graphical display, speed tracking, trip statistics, environmental sensors, and customizable UI
 
-![ESP32 Bike Computer](images/light-theme.jpg)
-![ESP32 Bike Computer](images/dark-theme.jpg)
-![ESP32 Bike Computer](images/settings.jpg)
+![ESP32-CYD-Bike-Computer](Images/light-theme.jpg)
+![ESP32-CYD-Bike-Computer](Images/dark-theme.jpg)
+![ESP32-CYD-Bike-Computer](Images/settings.jpg)
 
 ## Features
 
