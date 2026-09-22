@@ -13,7 +13,7 @@ Open-source ESP32-based bicycle computer with a graphical display, speed trackin
 - Temperature, atmospheric pressure and humidity monitoring
 - Trip timer
 
-- # About the Project (для русского языка листайте ниже)
+- # About the Project (для описания на русском листайте ниже)
 
 The entire codebase was written by AI. It went through many iterations before I achieved the desired result, so the code may not be fully optimized.
 This bike computer is installed on my personal KTM bicycle. That's also where the enclosure design comes from — it is inspired by the instrument cluster of the KTM Duke 790–890 motorcycles.
@@ -135,6 +135,18 @@ The measured distance is your wheel circumference in millimeters.
 
 Enter this value in the bike computer settings or directly in the source code.
 
+Troubleshooting
+Speed Always Shows 0
+
+If the speed reading remains at 0 km/h while riding, check the following:
+
+Magnet is too far from the Hall sensor. The distance between the magnet and the sensor may be too large for reliable detection.
+Magnet is not properly aligned. The magnet may be passing above or below the Hall sensor instead of directly in front of it.
+
+Incorrect magnet polarity or Hall sensor orientation. The magnet may be facing the sensor with the wrong magnetic pole, or the Hall sensor may be installed facing the wrong direction.
+
+Refer to the photos in the assembly photos folder for the correct Hall sensor orientation.
+
 
   Код полностью написан ИИ. Он прошел много итерации пока я не получил нужный результат. Возможно не является оптимальным. 
   Установлен на личный велосипед марки KTM. Отсюда и выбранный корпус под плату - внешне стилизован под приборную панель от мотоциклов KTM Duke 790-890. Так же подойдет и на другие марки с диаметром пера вилки 35мм, диаметр руля в месте крепления — 32мм. Для других размеров возможно вам придется немного доработать 3d модели крепежа.
@@ -153,3 +165,8 @@ Enter this value in the bike computer settings or directly in the source code.
 
 
 Как точно измерить длину окружности колеса — Ставите велосипед и колесо таким образом, чтобы ниппель был внизу около земли. На земле ставите черту. Катите велосипед вперед на один оборот колеса, пока ниппель снова не окажется возле земли — делаете вторую черту. Обычной рулеткой измеряете расстояние между двумя чертами.
+
+Проблемы которые могут возникнуть - скорость всегда 0 - 
+1. магнит проходит слишком далеко от датчика холла.
+2. магнит проходит ниже или выше датчика холла.
+3. магнит повернут не той полярностью к датчику холла или датчик холла повернут не той стороной к магниту (правильное расположение датчика холла есть на фото в папке assembly photos)
