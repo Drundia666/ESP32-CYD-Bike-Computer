@@ -155,7 +155,7 @@ Incorrect magnet polarity or Hall sensor orientation. The magnet may be facing t
 
 Refer to the photos in the assembly photos folder for the correct Hall sensor orientation.
 
-Securing Components
+**Securing Components**
 
 The magnetic USB connector, BME280 sensor, and 3-pin connector can be secured in place using a couple of drops of superglue.
 
@@ -390,6 +390,8 @@ float wheelCircumferenceMm = 2275;
 > Для более точного результата измеряйте колесо при обычном давлении в шине и с привычной нагрузкой на велосипед.
 
 Введите полученное значение в настройках велокомпьютера или непосредственно в исходном коде.
+
+**Крепеж элементов**
 
 Магнитный разъем, датчик BME280 и разъем 3-пин - крепятся с помощью пару капель суперклея
 Аккумулятор лучше зафиксировать с помощью термоклея, а также между аккумулятором и задней крышкой желательно положить небольшой толщины мягкий изоляционный материал 
