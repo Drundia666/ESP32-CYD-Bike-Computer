@@ -161,6 +161,12 @@ The magnetic USB connector, BME280 sensor, and 3-pin connector can be secured in
 
 It is recommended to secure the battery using hot glue. Additionally, place a thin layer of soft, electrically insulating material between the battery and the rear cover to provide cushioning and prevent direct contact.
 
+## 🧡 Support the project
+
+If you enjoy this project, you can support its development on Ko-fi.
+
+[![Support on Ko-fi](https://img.shields.io/badge/Support_on_Ko--fi-FF6600?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/drundia)
+
 # 🚴 Велокомпьютер на ESP32
 
 Самодельный велокомпьютер на базе ESP32 с сенсорным управлением, измерением скорости и расстояния, двумя независимыми поездками, таймерами и возможностью настройки интерфейса.
@@ -438,4 +444,10 @@ float wheelCircumferenceMm = 2275;
 Надеюсь, проект окажется полезным тем, кто захочет собрать собственный велокомпьютер или использовать отдельные идеи в своих разработках.
 
 **Приятной сборки и хороших поездок! 🚴**
+
+## 🧡 Support the project
+
+If you enjoy this project, you can support its development on Ko-fi.
+
+[![Support on Ko-fi](https://img.shields.io/badge/Support_on_Ko--fi-FF6600?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/drundia)
 
