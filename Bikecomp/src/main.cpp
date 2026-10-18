@@ -659,29 +659,27 @@ bool receiveFileToSd(const char* path, size_t fileSize);
 
 void syncRtcDateFromBuildDate()
 {
-  const char* buildDate = __DATE__;
-  const char* monthNames = "JanFebMarAprMayJunJulAugSepOctNovDec";
-  int month = 0;
+  // Дата и время компиляции
+  DateTime build(F(__DATE__), F(__TIME__));
+  DateTime now = rtc.now();
 
-  for (int index = 0; index < 12; index++)
+  // Если RTC потерял питание — ставим полностью время сборки
+  if (rtc.lostPower())
   {
-    if (strncmp(buildDate, monthNames + index * 3, 3) == 0)
-    {
-      month = index + 1;
-      break;
-    }
+    rtc.adjust(build);
+    return;
   }
 
-  int day = (buildDate[4] == ' ' ? buildDate[5] - '0' :
-             (buildDate[4] - '0') * 10 + buildDate[5] - '0');
-  int year = (buildDate[7] - '0') * 1000 + (buildDate[8] - '0') * 100 +
-             (buildDate[9] - '0') * 10 + buildDate[10] - '0';
+  // Если дата в RTC РАНЬШЕ даты сборки — значит, RTC отстаёт
+  // (новая прошивка свежее). Подтягиваем только дату, время не трогаем.
+  DateTime buildDay(build.year(), build.month(), build.day(), 0, 0, 0);
+  DateTime nowDay(now.year(), now.month(), now.day(), 0, 0, 0);
 
-  if (month < 1 || day < 1 || day > 31 || year < 2000)
-    return;
-
-  DateTime now = rtc.now();
-  rtc.adjust(DateTime(year, month, day, now.hour(), now.minute(), now.second()));
+  if (nowDay.unixtime() < buildDay.unixtime())
+  {
+    rtc.adjust(DateTime(build.year(), build.month(), build.day(),
+                        now.hour(), now.minute(), now.second()));
+  }
 }
 
 void setup()
